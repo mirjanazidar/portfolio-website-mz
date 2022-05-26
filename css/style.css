@@ -56,3 +56,25 @@ a:active,
 a:active {
   color: #191a3d;
 }
+.button {
+  display: inline-block;
+  background-color: transparent;
+  color: #191a3d;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid #191a3d;
+}
+.button:hover {
+  display: inline-block;
+  background-color: #191a3d;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid #191a3d;
+}
