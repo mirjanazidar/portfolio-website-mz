@@ -1,6 +1,8 @@
 /*
 Colors used:
 Black: #222222
+Blue: #191a3d
+Light: #434068
 White: #ffffff
 White for frames:#f2f2f2;
 */
@@ -26,4 +28,31 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 600;
+}
+a {
+  color: #434068;
+  text-decoration: underline;
+}
+a:visited {
+  color: #191a3d;
+}
+a:hover {
+  color: #191a3d;
+  text-decoration: underline;
+}
+a:active {
+  color: #191a3d;
+}
+a:visited,
+a:visited {
+  color: #191a3d;
+}
+a:hover,
+a:focus {
+  color: #191a3d;
+  text-decoration: underline;
+}
+a:active,
+a:active {
+  color: #191a3d;
 }
