@@ -95,9 +95,14 @@ a:active {
   padding-bottom: 24px;
 }
 header {
+  position: fixed;
+  width: 100%;
   background-color: #f2f2f2;
   text-align: center;
-  padding: 16px 0;
+  padding-top: 16px;
+}
+main {
+  padding-top: 133px;
 }
 
 nav>ul {
