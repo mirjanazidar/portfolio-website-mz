@@ -69,9 +69,12 @@ a:active {
   padding: 8px;
   border-radius: 1px;
   border: 1px solid #191a3d;
+  transition-duration: 0.2s;
+  transition-property: all;
 }
 
-.button:hover
+
+.button:hover,
 .button:focus {
   background-color: #191a3d;
   color: #ffffff;
@@ -90,10 +93,12 @@ a:active {
   margin: 16px 0;
   padding-bottom: 24px;
 }
+
 .column {
   margin: 16px 0;
   padding-bottom: 24px;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -101,6 +106,7 @@ header {
   text-align: center;
   padding-top: 16px;
 }
+
 main {
   padding-top: 133px;
 }
@@ -145,6 +151,7 @@ nav>ul>li>a:active {
   display: inline-block;
   width: 100%;
 }
+
 a {
   color: #434068;
   text-decoration: underline;
@@ -154,10 +161,11 @@ a {
   margin: 0;
   padding: 0;
 }
+
 #hero span {
-display: block;
-font-size: 70%;
-margin-top: 1em;
+  display: block;
+  font-size: 70%;
+  margin-top: 1em;
 }
 
 #contact {
@@ -167,13 +175,101 @@ margin-top: 1em;
   padding: 16px;
   margin-top: 16px;
 }
+
 .social-media a {
   display: inline-block;
   margin: 0 10px;
 }
+
 .email a {
   margin-bottom: 30px;
 }
-#about .row {
+
+.no-space {
   margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+   50% {fill: #fcffad;}
+   100% {fill: #f76414;}
+ }
+ .sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    float: right;
+  }
+
+
+  nav {
+    width: auto;
+    float: right;
+    padding: 8px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-7 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 40%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
