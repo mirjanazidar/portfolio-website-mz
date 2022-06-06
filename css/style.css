@@ -6,6 +6,10 @@ Light: #434068
 White: #ffffff
 White for frames:#f2f2f2;
 */
+
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Nunito', sans-serif;
@@ -90,7 +94,7 @@ a:active {
 }
 
 .row {
-  margin: 16px 0;
+  margin: 16px -1em;
   padding-bottom: 24px;
 }
 
@@ -279,6 +283,7 @@ a {
 
   [class*="col-"] {
     float: left;
+    padding: 1em;
   }
 
   .row::after {
@@ -294,7 +299,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .col-md-4 {
-    width: 40%;
+    width: 33%;
   }
 
   .col-md-7 {
