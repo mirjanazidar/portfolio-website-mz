@@ -94,7 +94,7 @@ a:active {
 }
 
 .row {
-  margin: 16px -1em;
+  margin: 16px 0;
   padding-bottom: 24px;
 }
 
@@ -112,7 +112,7 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 132px;
 }
 
 nav>ul {
@@ -128,7 +128,7 @@ nav>ul>li {
 
 nav>ul>li>a,
 nav>ul>li>a:visited {
-  padding: 0 15px;
+  padding: 0 16px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -151,7 +151,7 @@ nav>ul>li>a:active {
 }
 
 #hero {
-  padding: 16px 0;
+  padding: 3em 0;
   display: inline-block;
   width: 100%;
 }
@@ -275,6 +275,9 @@ a {
     width: auto;
     float: right;
     padding: 8px;
+  }
+  #my-work .row {
+    margin: 16px -1em;
   }
 
   .col-md-6 {
