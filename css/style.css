@@ -85,7 +85,7 @@ a:active {
 }
 
 .logo {
-  max-width: 125px;
+  max-width: 60px;
   text-align: center;
 }
 
@@ -107,23 +107,17 @@ header {
   position: fixed;
   width: 100%;
   background-color: #f2f2f2;
-  text-align: center;
   padding-top: 16px;
 }
 
 main {
-  padding-top: 132px;
+  padding-top: 100px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  display: block;
-  width: 100%;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 1em 0;
 }
 
 nav>ul>li>a,
@@ -148,6 +142,33 @@ nav>ul>li>a:active {
   text-transform: uppercase;
   font-weight: 700;
   color: #7f0000;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -265,6 +286,17 @@ a {
 }
 
 @media only screen and (min-width: 640px) {
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .logo {
+    min-width: 150px;
+}
   header {
     text-align: unset;
     float: right;
@@ -274,7 +306,6 @@ a {
   nav {
     width: auto;
     float: right;
-    padding: 8px;
   }
   #my-work .row {
     margin: 16px -1em;
@@ -298,9 +329,18 @@ a {
   #about h3 {
     margin-top: 0;
   }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px)
+ {
+
   .col-md-4 {
     width: 33%;
   }
@@ -318,5 +358,14 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
 
 }
